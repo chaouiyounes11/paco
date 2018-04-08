@@ -1,0 +1,864 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+nav a {
+  display: flex;
+flex-direction: column;
+text-align: center;
+}
+nav a #subtitle {
+  font-size: 12px;
+  color: lightblue;
+}
+
+.navbar {
+  padding: 1%
+}
+
+.navbar-nav {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+
+navbar-nav mr-auto {
+  margin: auto;
+    margin-right: auto;
+display: flex;
+justify-content: space-around;
+width: 74%;
+}
+.navbar-light .navbar-nav .nav-link-seagreen {
+  color: black;
+  font-weight: bolder;
+  opacity: .4;}
+
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link
+
+{
+  color: black;
+  font-weight: bolder;
+  opacity: .4;}
+
+.ponctuationmenu {
+  color: lightcoral;
+  font-weight: bolder;
+}
+
+  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link:hover {
+    opacity: 1;
+  }
+
+
+  .navbar-light .navbar-nav .nav-link-seagreen:hover{
+    opacity: 1;
+    color: black;
+    duration : .9
+  }
+
+  #entete {
+    display: flex;
+justify-content: center;
+text-align: center;
+background-color: black;
+background-size: cover;
+height: 100vh;
+background-position: center;
+background-attachment: fixed;
+align-items: center;
+flex-wrap: wrap;
+  }
+
+#entete nav {
+  width: 100%;
+}
+
+#entete nav ul {
+  display: flex;
+justify-content: space-around;
+list-style: none;
+width: 100%;
+margin: 0%;
+padding: 0%;
+}
+
+#entete nav ul li {
+  display: flex;align-items: center;
+}
+
+#entete nav ul li a {
+  color: white;
+font-weight: lighter;
+font-size: 19px;
+text-shadow: 2px 2px black;
+}
+
+#entete #paco {
+  color: lightcoral;
+font-weight: bold;
+border: 1px solid;
+transition-duration: .6s;
+height: 12%;
+width: 400px;
+display: flex;
+flex-direction: column;
+font-size: 30px;
+font-weight: lighter;
+text-shadow: 1px 1px black;
+align-items: center;
+justify-content: space-around;
+}
+
+#entete #paco:hover{
+  text-decoration: none;
+  background-color: lightcoral;
+  border-color: lightcoral;
+  color: white;
+transition-duration: .6s;
+}
+
+#entete a strong {
+font-size: 16px;
+color: lightgrey;
+font-weight: lighter;
+width: 100%;
+}
+
+#chevron-down {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 0%;
+  color:black;
+}
+
+#aboutpaco {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#aboutpaco figcaption {
+  font-weight: bolder;
+margin: 6% 0%;
+font-size: 21px;
+}
+
+figcaption strong {
+  color: lightcoral;
+font-size: 28px;
+}
+#aboutpaco figure {
+  margin: 0%;
+}
+
+#aboutpaco figure img {
+  border-radius: 100%;
+width: 50%;
+border: 3px solid lightcoral;
+}
+
+#aboutme {
+  margin: 3% 20%;
+  text-align: center;
+  border: 3.1px solid black;
+  padding: 2% 3%;
+  box-shadow: 9px 6px 6px grey;
+}
+
+#aboutme h2 {
+  margin-bottom: 1.3em;
+  font-size: 34px;
+  font-weight: lighter;
+}
+
+#sectioncitations{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sectioncitations article {
+  margin: 0%;
+  padding: 0%;
+  width: 25%;
+  filter: grayscale(100%);
+}
+
+#sectioncitations #debbouze  {
+  background-image: url(../img/debbouze.jpg);
+  width: 25%;
+  height: 300px;
+  filter: grayscale(100%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #zidane  {
+  background-image: url(../img/zidane.jpg);
+  width: 25%;
+  height: 300px;
+  filter: grayscale(100%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #tapis  {
+  background-image: url(../img/tapis.jpg);
+  width: 25%;
+  height: 300px;
+  filter: grayscale(100%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #hapsatou  {
+  background-image: url(../img/hapsatou.jpg);
+  width: 25%;
+  height: 300px;
+  filter: grayscale(100%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations section a {
+  display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 32px;
+transition-duration: .6s;
+display: none;
+}
+#sectioncitations #debbouze:hover {
+  filter: grayscale(0%);
+}
+
+#sectioncitations #hapsatou:hover {
+  filter: grayscale(0%);
+}
+#sectioncitations #tapis:hover {
+  filter: grayscale(0%);
+}
+#sectioncitations #zidane:hover {
+  filter: grayscale(0%);
+}
+
+#sectioncitations :hover a {
+  display: flex;
+  text-decoration: none;
+  text-shadow: 2px 2px black;
+}
+
+.photoscitations {
+  width: 33%;
+  height: 100%;
+}
+
+.photoscitations2 {
+  width: 50%;
+}
+
+/*.photoscitations3 {
+  width: 100%;
+  filter: grayscale(100%);
+  transition-duration: .3s;
+  height: 100%;
+
+}*/
+
+#courage {
+  width: 100%;
+text-align: center;
+height: 100px;
+background-color: black;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 29px;
+font-weight: lighter;
+}
+
+#sectioncitations #lion  {
+  background-image: url(../img/lion.jpg);
+  width: 33.333%;
+  height: 300px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #lion:hover {
+  filter: grayscale(100%);
+}
+
+#sectioncitations #elephant:hover {
+  filter: grayscale(100%);
+}
+
+#sectioncitations #singe:hover {
+  filter: grayscale(100%);
+}
+
+#sectioncitations #elephant  {
+  background-image: url(../img/elephant.jpg);
+  width: 33.3333%;
+  height: 300px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #singe  {
+  background-image: url(../img/chimpanze.jpg);
+  width: 33.3333%;
+  height: 300px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#lion .pinkanimal:hover {
+  color: lightcoral;
+}
+
+#sectioncitations #french  {
+  background-image: url(../img/french.jpg);
+  width: 100%;
+  height: 300px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #french:hover {
+  filter: sepia(50%);
+}
+
+#sectioncitations #inde  {
+  background-image: url(../img/inde.jpg);
+  width: 25%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:100%;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #malaisie  {
+  background-image: url(../img/malaisie.jpg);
+    width: 25%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:100%;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #maroc  {
+  background-image: url(../img/maroc.jpg);
+    width: 25%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #australie  {
+  background-image: url(../img/australie.jpg);
+  width: 25%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#abnegation  {
+  width: 100%;
+text-align: center;
+height: 100px;
+background-color:#e6b953;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 29px;
+font-weight: bolder;
+}
+
+#inspiration  {
+  width: 100%;
+text-align: center;
+height: 100px;
+background-color:lightcoral;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 29px;
+font-weight: bolder;
+}
+
+#enjoy  {
+  width: 100%;
+text-align: center;
+height: 100px;
+background-color:white;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 29px;
+font-weight: bolder;
+}
+
+#sectioncitations #paris {
+  background-image: url(../img/paris.jpg);
+  width: 33.33%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #londres {
+  background-image: url(../img/londres.jpg);
+  width: 33.33%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #lille {
+  background-image: url(../img/lille.jpg);
+  width: 33.33%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #web {
+  background-image: url(../img/web.jpg);
+  width: 50%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #animation  {
+  background-image: url(../img/animation.jpg);
+  width: 50%;
+  height: 300px;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#sectioncitations #networking  {
+  background-image: url(../img/networking.jpg);
+  width: 33.33%;
+  height: 300px;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sectioncitations #immo  {
+  background-image: url(../img/immobilier.jpeg);
+  width: 33.33%;
+  height: 300px;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #startup  {
+  background-image: url(../img/startup.jpg);
+  width: 33.333%;
+  height: 300px;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
