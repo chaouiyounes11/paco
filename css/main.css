@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+jerusalem/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -94,62 +94,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@media (min-width: 300px) {
 
+#chevron-down {
+  display: none;
+}
 nav a {
   display: flex;
 flex-direction: column;
 text-align: center;
 }
-nav a #subtitle {
-  font-size: 12px;
-  color: lightblue;
-}
-
-.navbar {
-  padding: 1%
-}
-
-.navbar-nav {
-  width: 75%;
-  display: flex;
-  justify-content: space-around;
-}
-
-navbar-nav mr-auto {
-  margin: auto;
-    margin-right: auto;
-display: flex;
-justify-content: space-around;
-width: 74%;
-}
-.navbar-light .navbar-nav .nav-link-seagreen {
-  color: black;
-  font-weight: bolder;
-  opacity: .4;}
 
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link
 
-{
-  color: black;
-  font-weight: bolder;
-  opacity: .4;}
-
-.ponctuationmenu {
-  color: lightcoral;
-  font-weight: bolder;
-}
-
-  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link:hover {
-    opacity: 1;
-  }
-
-
-  .navbar-light .navbar-nav .nav-link-seagreen:hover{
-    opacity: 1;
-    color: black;
-    duration : .9
-  }
 
   #entete {
     display: flex;
@@ -160,7 +117,7 @@ background-size: cover;
 height: 100vh;
 background-position: center;
 background-attachment: fixed;
-align-items: center;
+align-items: flex-start;
 flex-wrap: wrap;
   }
 
@@ -177,27 +134,26 @@ margin: 0%;
 padding: 0%;
 }
 
+
 #entete nav ul li {
   display: flex;align-items: center;
 }
 
-#entete nav ul li a {
+#entete nav ul li .styleMob {
   color: white;
 font-weight: lighter;
-font-size: 19px;
-text-shadow: 2px 2px black;
+font-size: 12px;
 }
 
 #entete #paco {
-  color: lightcoral;
+  color: #f18b5a;
 font-weight: bold;
-border: 1px solid;
 transition-duration: .6s;
 height: 12%;
 width: 400px;
 display: flex;
 flex-direction: column;
-font-size: 30px;
+font-size: 15px;
 font-weight: lighter;
 text-shadow: 1px 1px black;
 align-items: center;
@@ -206,28 +162,795 @@ justify-content: space-around;
 
 #entete #paco:hover{
   text-decoration: none;
-  background-color: lightcoral;
-  border-color: lightcoral;
-  color: white;
-transition-duration: .6s;
 }
 
-#entete a strong {
-font-size: 16px;
-color: lightgrey;
+#inspiration  {
+  width: 100%;
+text-align: center;
+height: 64px;
+background-color: #f18b5a;
+;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-weight: bolder;
+}
+
+.photoscitations {
+  width: 100%;
+  border: 0.1px solid black;
+  height: 100%;
+}
+#citations2 {
+  display: flex;
+}
+.photoscitations2 {
+  width: 50%;
+  height: 184px;
+}
+#finished {
+  background-image: url(../img/finished.jpg);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#started {
+  background-image: url(../img/started.jpg);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #debbouze  {
+  background-image: url(../img/debbouze.jpg);
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: bolder;
+  text-shadow: 1px 1px white;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#debbouze a {
+  margin-left: 3%;
+  color: #006233;
+  text-shadow: 1px 1px #c1272d;
+  font-size: 14px;
+}
+
+#sectioncitations #zidane  {
+  background-image: url(../img/zidane.jpg);
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-shadow: 1px 1px white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#zidane a {
+  margin-left: 3%;
+font-weight: bolder;
+color: #006233;
+text-shadow: 1px 1px white;
+}
+#sectioncitations #tapis  {
+  background-image: url(../img/tapis.jpg);
+  width: 100%;
+  height: 100vh;
+  font-weight: bolder;
+  text-shadow: 1px 1px white;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-attachment: fixed;
+  text-shadow: 1px 1px white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#tapis a {
+  margin-right: 3%;
+  color: #002496;
+  text-shadow: 1px 1px white;
+}
+
+#sectioncitations #hapsatou  {
+  background-image: url(../img/hapsatou.jpg);
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-weight: bolder;
+  text-shadow: 1px 1px white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.wordMar {
+  margin: 0%;
+  color: #f18b5a;
+  font-weight: bolder;
+}
+
+#hapsatou a {
+  margin-right: 3%;
+  text-shadow:2px 2px #00853f;
+  color: #e31b23;
+  font-size: 14px;
+}
+
+
+
+#courage {
+  width: 100%;
+text-align: center;
+height: 64px;
+background-color: black;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
 font-weight: lighter;
-width: 100%;
 }
 
-#chevron-down {
+#enjoy  {
+  width: 100%;
+text-align: center;
+height: 64px;
+background-color:white;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-weight: bolder;
+}
+
+#voyage {
+  width: 100%;
+text-align: center;
+height: 64px;;
+background-color: whitesmoke;
+color: crimson;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-weight: lighter;
+}
+#sectioncitations #lion  {
+  background-image: url(../img/lion.jpg);
+  width: 100%;
+  height: 300px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#animals {
+  display: flex;
+}
+
+#animals a {
+  display: none;
+}
+
+#lion a {
+  display: none;
+}
+#sectioncitations #elephant  {
+  background-image: url(../img/elephant.jpg);
+  width: 50%;
+  height: 300px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #singe  {
+  background-image: url(../img/chimpanze.jpg);
+  width: 50%;
+  height: 300px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  background-size:auto;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #french  {
+  background-image: url(../img/french.jpg);
+  width: 100%;
+  height: 300px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#french a {
+  display: none;
+}
+
+#cities {
+  display: flex;
+}
+
+#cities2 {
+  display: flex;
+}
+
+#cities2 a {
+  display: none;
+}
+
+#cities a {
+  display: none;
+}
+#sectioncitations #paris {
+  background-image: url(../img/paris.jpg);
+  width: 33.33%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #londres {
+  background-image: url(../img/londres.jpg);
+  width: 33.33%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #perou {
+  background-image: url(../img/perou.jpg);
+  width:100%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #cuba {
+  background-image: url(../img/cuba.jpg);
+  width: 100%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #bresil {
+  background-image: url(../img/bresil.jpg);
+  width: 100%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #egypte {
+  background-image: url(../img/egypte.jpg);
+  width: 100%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #jerusalem {
+  background-image: url(../img/jerusalem.jpg);
+  width: 100%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #lille {
+  background-image: url(../img/lille.jpg);
+  width: 33.33%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #mecca {
+  background-image: url(../img/mecca.jpg);
+  width: 100%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+#countries {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#countries section {
+  border: 0.1px solid white;
+}
+
+#countries #australie {
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+#countries #maroc {
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+}
+
+#countries #inde {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+#countries #malaisie {
+  border-top: none;
+  border-right: none;
+}
+#countries a {
+  display: none;
+}
+#sectioncitations #inde  {
+  background-image: url(../img/inde.jpg);
+  width: 50%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #malaisie  {
+  background-image: url(../img/malaisie.jpg);
+    width: 50%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #maroc  {
+  background-image: url(../img/maroc.jpg);
+    width: 50%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#sectioncitations #australie  {
+  background-image: url(../img/australie.jpg);
+  width: 50%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: inherit;
+}
+
+#abnegation  {
+  width: 100%;
+text-align: center;
+height: 64px;
+background-color:#e6b953;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-weight: bolder;
+}
+
+#biz1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#biz1 a {
+  display: none;
+}
+#sectioncitations #web {
+  background-image: url(../img/web.jpg);
+  width: 100%;
+  height: 300px;
+  filter: sepia(33%);
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sectioncitations #animation  {
+  background-image: url(../img/animation.jpg);
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+#sectioncitations #networking  {
+  background-image: url(../img/networking.jpg);
+  width:100%;
+  height: 300px;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sectioncitations #immo  {
+  background-image: url(../img/immobilier.jpeg);
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#immo a {
+  display: none;
+}
+
+#startup a {
+  display: none;
+}
+
+#sectioncitations #startup  {
+  background-image: url(../img/startup.jpg);
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#contact  {
+  background-image: url(../img/contact.jpg);
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  background-size:cover;
+  transition-duration: .3s;
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#contact a {
+  color: #22273e;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 2px 2px grey;
+  font-size: 18px;
+  border: 2px solid #22273e;
+  padding: 2% 8%;
+}
+
+#contact a:hover {
+  background-color: #22273e;
+  border-color: #22273e;
+  text-shadow: none;
+  color: white;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+/* PAGE PACO*/
+
+#navbar-icon-color .navbar-toggler {
+  border: none;
+}
+footer {
+  height: 66px;
+  background-color: #f18b5a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+footer p {
+  margin: 0%;
+  font-weight: bold;
+}
+
+
+footer .legalmention {
+  font-size: 8px;
+}
+
+#footer2 {
+  height: 66px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color:#f18b5a;
+}
+}
+
+@media (min-width: 650px) {
+
+#chevron-down{
+  display: none;
+}
+
+#sectioncitations .photoscitationsTab {
+  width: 50%;
+}
+
+#sectioncitations #citations2 {
+  width: 100%;
+}
+
+#sectioncitations #citations2 .photoscitations2 {
+  width: 50%;
+}
+
+#sectioncitations #debbouze a {
+  font-weight: 200;
+  font-size: 26px;
+}
+
+#sectioncitations #tapis a {
+  font-weight: 200;
+  font-size: 26px;
+}
+
+#sectioncitations #zidane a {
+  font-weight: 200;
+  font-size: 26px;
+}
+
+#sectioncitations #hapsatou a {
+  font-weight: 200;
+  font-size: 26px;
+}
+
+#sectioncitations #cities {
+  width: 100%;
+}
+
+#sectioncitations #cities2 {
+  width: 100%;
+}
+
+#sectioncitations #countries {
+  width: 100%;
+}
+
+#sectioncitations #biz1 {
+  width: 100%;
+}
+
+#sectioncitations #biz1 #web{
+  width: 33.33%;
+}
+
+#sectioncitations #biz1 #animation{
+  width: 33.33%;
+}
+
+#sectioncitations #biz1 #networking{
+  width: 33.33%;
+}
+
+
+#sectioncitations #biz2 {
   width: 100%;
   display: flex;
-  justify-content: center;
-  font-size: 40px;
-  margin: 0%;
-  color:black;
 }
 
+#sectioncitations #biz2 #immo{
+  width: 50%;
+}
+
+#sectioncitations #biz2 #startup{
+  width: 50%;
+}
+
+#sectioncitations #french a {
+  display: none;
+}
+
+#sectioncitations #cities a {
+  display: none;
+}
+
+#sectioncitations #cities2 a {
+  display: none;
+}
+
+#sectioncitations #countries a {
+  display: none;
+}
+
+#sectioncitations #biz1 a {
+  display: none;
+}
+
+#sectioncitations #biz2 a {
+  display: none;
+}
+
+#contact {
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
 #aboutpaco {
   display: flex;
   justify-content: center;
@@ -277,127 +1000,49 @@ border: 3px solid lightcoral;
   margin: 0%;
   padding: 0%;
   width: 25%;
-  filter: grayscale(100%);
 }
 
-#sectioncitations #debbouze  {
-  background-image: url(../img/debbouze.jpg);
-  width: 25%;
-  height: 300px;
-  filter: grayscale(100%);
-  cursor: pointer;
-  background-size:auto;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#sectioncitations #zidane  {
-  background-image: url(../img/zidane.jpg);
-  width: 25%;
-  height: 300px;
-  filter: grayscale(100%);
-  cursor: pointer;
-  background-size:auto;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#sectioncitations #tapis  {
-  background-image: url(../img/tapis.jpg);
-  width: 25%;
-  height: 300px;
-  filter: grayscale(100%);
-  cursor: pointer;
-  background-size:auto;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#sectioncitations #hapsatou  {
-  background-image: url(../img/hapsatou.jpg);
-  width: 25%;
-  height: 300px;
-  filter: grayscale(100%);
-  cursor: pointer;
-  background-size:auto;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 #sectioncitations section a {
   display: flex;
 justify-content: center;
 align-items: center;
-color: white;
 font-size: 32px;
-transition-duration: .6s;
-display: none;
-}
-#sectioncitations #debbouze:hover {
-  filter: grayscale(0%);
 }
 
-#sectioncitations #hapsatou:hover {
-  filter: grayscale(0%);
-}
-#sectioncitations #tapis:hover {
-  filter: grayscale(0%);
-}
-#sectioncitations #zidane:hover {
-  filter: grayscale(0%);
+#sectioncitations #lion {
+  width: 50%;
 }
 
-#sectioncitations :hover a {
-  display: flex;
-  text-decoration: none;
-  text-shadow: 2px 2px black;
+#sectioncitations #lion a {
+  display: none;
 }
 
-.photoscitations {
-  width: 33%;
-  height: 100%;
+#sectioncitations #elephant a {
+  display: none;
+}
+
+#sectioncitations #singe a {
+  display: none;
+}
+
+#sectioncitations #animals {
+  width: 66.66%;
+}
+
+#sectioncitations #animals #elephant {
+  width: 50%;
+}
+
+#sectioncitations #animals #singe {
+  width: 50%;
 }
 
 .photoscitations2 {
   width: 50%;
 }
 
-/*.photoscitations3 {
-  width: 100%;
-  filter: grayscale(100%);
-  transition-duration: .3s;
-  height: 100%;
 
-}*/
-
-#courage {
-  width: 100%;
-text-align: center;
-height: 100px;
-background-color: black;
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 29px;
-font-weight: lighter;
-}
 
 #sectioncitations #lion  {
   background-image: url(../img/lion.jpg);
@@ -414,284 +1059,147 @@ align-items: center;
   background-position: center;
 }
 
-#sectioncitations #lion:hover {
-  filter: grayscale(100%);
-}
-
-#sectioncitations #elephant:hover {
-  filter: grayscale(100%);
-}
-
-#sectioncitations #singe:hover {
-  filter: grayscale(100%);
-}
-
-#sectioncitations #elephant  {
-  background-image: url(../img/elephant.jpg);
-  width: 33.3333%;
+#photoscitations2 {
   height: 300px;
-  filter: grayscale(0%);
-  cursor: pointer;
-  background-size:auto;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-#sectioncitations #singe  {
-  background-image: url(../img/chimpanze.jpg);
-  width: 33.3333%;
+#citations2 .photoscitations2 {
   height: 300px;
-  filter: grayscale(0%);
-  cursor: pointer;
-  background-size:auto;
-  transition-duration: .3s;
+}
+
+}
+
+@media (min-width: 890px) {
+#entete {
+  align-items: center;
+}
+
+#chevron-down {
   display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#lion .pinkanimal:hover {
-  color: lightcoral;
-}
-
-#sectioncitations #french  {
-  background-image: url(../img/french.jpg);
   width: 100%;
-  height: 300px;
-  filter: grayscale(0%);
+  justify-content: center;
+  align-content: center;
+}
+
+#chevron-down i {
+  color: white;
+  font-size: 50px;
   cursor: pointer;
-  background-size:auto;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-#sectioncitations #french:hover {
-  filter: sepia(50%);
+#entete nav ul li .styleMob {
+  font-size: 20px;
 }
 
-#sectioncitations #inde  {
-  background-image: url(../img/inde.jpg);
-  width: 25%;
-  height: 300px;
-  filter: sepia(33%);
-  cursor: pointer;
-  background-size:100%;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
+#entete #paco {
+  border: 1px solid;
+  font-size: 30px;
+font-weight: lighter;
+transition-duration: .3s;
 }
 
-#sectioncitations #malaisie  {
-  background-image: url(../img/malaisie.jpg);
-    width: 25%;
-  height: 300px;
-  filter: sepia(33%);
-  cursor: pointer;
-  background-size:100%;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#sectioncitations #maroc  {
-  background-image: url(../img/maroc.jpg);
-    width: 25%;
-  height: 300px;
-  filter: sepia(33%);
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#sectioncitations #australie  {
-  background-image: url(../img/australie.jpg);
-  width: 25%;
-  height: 300px;
-  filter: sepia(33%);
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#abnegation  {
-  width: 100%;
-text-align: center;
-height: 100px;
-background-color:#e6b953;
-color: black;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 29px;
-font-weight: bolder;
-}
-
-#inspiration  {
-  width: 100%;
-text-align: center;
-height: 100px;
-background-color:lightcoral;
+#entete #paco:hover {
+  text-decoration: none;
+  background-color: #f18b5a;
+border-color: lightcoral;
 color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 29px;
+transition-duration: .4s;
+}
+
+#photoscitations2 {
+  height: 450px;
+}
+
+#sectioncitations .photoscitationsTab {
+  width: 33.33%;
+}
+#inspiration, #courage {
+  height: 105px;
+}
+
+#courage p {
+  margin: 0px;
+  font-size: 32px;
+}
+
+#started {
+  height: 220px;
+}
+
+#finished {
+  height: 220px;
+}
+#sectioncitations #debbouze{
+  width: 25%;
+  background-attachment: inherit;
+  height: 360px;
+}
+
+#sectioncitations #tapis {
+  width: 25%;
+  height: 360px;
+  background-attachment: inherit;
+}
+
+#sectioncitations #hapsatou {
+  width: 25%;
+  height: 360px;
+  background-attachment: inherit;
+}
+
+#sectioncitations #zidane {
+  width: 25%;
+  height: 360px;
+  background-attachment: inherit;
+}
+
+.wordMar {
+  margin: 0%;
+color: white;
 font-weight: bolder;
+font-size: 32px;
 }
-
-#enjoy  {
-  width: 100%;
-text-align: center;
-height: 100px;
-background-color:white;
-color: black;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 29px;
-font-weight: bolder;
-}
-
-#sectioncitations #paris {
-  background-image: url(../img/paris.jpg);
+.photoscitations{
   width: 33.33%;
-  height: 300px;
-  filter: sepia(33%);
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-#sectioncitations #londres {
-  background-image: url(../img/londres.jpg);
-  width: 33.33%;
-  height: 300px;
-  filter: sepia(33%);
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
+#sectioncitations .linkbio {
   display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-shadow: 0px 0px;
+  margin: 0px;
+  color: white;
 }
 
-#sectioncitations #lille {
-  background-image: url(../img/lille.jpg);
-  width: 33.33%;
-  height: 300px;
-  filter: sepia(33%);
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
+#sectioncitations .linkbio {
   display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-shadow: 0px 0px;
+  margin: 0px;
+  color: white;
+  display: none;
 }
 
-#sectioncitations #web {
-  background-image: url(../img/web.jpg);
-  width: 50%;
-  height: 300px;
-  filter: sepia(33%);
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
+#sectioncitations #debbouze {
+  justify-content: center;
+  align-items: center;
 }
 
-#sectioncitations #animation  {
-  background-image: url(../img/animation.jpg);
-  width: 50%;
-  height: 300px;
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
+#sectioncitations #tapis {
+  justify-content: center;
+  align-items: center;
 }
 
-
-#sectioncitations #networking  {
-  background-image: url(../img/networking.jpg);
-  width: 33.33%;
-  height: 300px;
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#sectioncitations #immo  {
-  background-image: url(../img/immobilier.jpeg);
-  width: 33.33%;
-  height: 300px;
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
+#sectioncitations #hapsatou {
+  justify-content: center;
+  align-items: center;
 }
 
-#sectioncitations #startup  {
-  background-image: url(../img/startup.jpg);
-  width: 33.333%;
-  height: 300px;
-  cursor: pointer;
-  background-size:cover;
-  transition-duration: .3s;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
+#sectioncitations #zidane {
+  justify-content: center;
+  align-items: center;
+}
+#citations2 .photoscitations2 {
+  height: 450px;
+}
 }
 /* ==========================================================================
    Helper classes
