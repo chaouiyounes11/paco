@@ -789,7 +789,7 @@ align-items: center;
   color: #22273e;
   text-align: center;
   font-weight: bolder;
-  text-shadow: 2px 2px grey;
+  text-shadow: 2px 2px grey;https://www.malt.fr/profile/jeanbaptistejerome?q=int%C3%A9grateur&gclid=EAIaIQobChMI5fbt6ve72gIVypPtCh2bDQrrEAAYAiAAEgJF7PD_BwE
   cursor: pointer;
   font-size: 18px;
   border: 2px solid #22273e;
@@ -1057,6 +1057,8 @@ border: 3px solid lightcoral;
 }
 
 
+/
+
 #sectioncitations section a {
   display: flex;
 justify-content: center;
@@ -1145,7 +1147,34 @@ align-items: center;
 #chevron-down i:hover{
   color: #f18b5a;
   transition-duration: .8s;
+}
 
+/*#chevron-down i {
+  animation: bling 3.5 infinite;
+}
+@keyframes bling {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}*/
+
+#chevron-down a i{
+    animation: bling 2.5s infinite;
+}
+@keyframes bling{
+    0%{opacity: 1;}
+    25%{opacity: 0;}
+    50%{opacity: 1;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 #entete nav ul li .styleMob {
