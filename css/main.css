@@ -149,7 +149,7 @@ font-size: 12px;
   color: #f18b5a;
 font-weight: bold;
 transition-duration: .6s;
-height: 12%;
+height: 20%;
 width: 400px;
 display: flex;
 flex-direction: column;
@@ -790,8 +790,10 @@ align-items: center;
   text-align: center;
   font-weight: bolder;
   text-shadow: 2px 2px grey;
+  cursor: pointer;
   font-size: 18px;
   border: 2px solid #22273e;
+  transition-duration: .5s;
   padding: 2% 8%;
 }
 
@@ -799,12 +801,12 @@ align-items: center;
   background-color: #22273e;
   border-color: #22273e;
   text-shadow: none;
+  text-decoration: none;
+  transition-duration: .5s;
   color: white;
 }
 
-#contact a {
-  text-decoration: none;
-}
+
 
 /* PAGE PACO*/
 
@@ -846,6 +848,58 @@ footer .legalmention {
 
 #chevron-down{
   display: none;
+}
+
+#entete nav ul li {
+  position: relative;
+   display: inline-block;
+   padding: 0px 15px;
+}
+
+#entete nav ul li .styleMob {
+  position: relative;
+}
+
+#entete nav ul li .styleMob:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+#entete nav ul li .styleMob:hover:after{
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+#entete nav ul li .styleMob:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 25px;
+  right: 0;
+  background: #fff;
+  transition: width .8s ease;
+  -webkit-transition: width .2s ease;
+}
+
+#entete nav ul li .styleMob:hover:after{
+  width: 100%;
+  left: 0;
+  background: #f18b5a;
+}
+
+#entete nav ul li .styleMob:hover {
+  color: #f18b5a;
+  transition-duration: .4s;
+  text-decoration: none;
 }
 
 #sectioncitations .photoscitationsTab {
@@ -1085,6 +1139,13 @@ align-items: center;
   color: white;
   font-size: 50px;
   cursor: pointer;
+  transition-duration: .8s;
+}
+
+#chevron-down i:hover{
+  color: #f18b5a;
+  transition-duration: .8s;
+
 }
 
 #entete nav ul li .styleMob {
@@ -1199,6 +1260,31 @@ font-size: 32px;
 }
 #citations2 .photoscitations2 {
   height: 450px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  border-top: solid #f18b5a 2px;
+  border-bottom: solid #f18b5a 2px;
+  display: none;
+}
+
+form input {
+  width: 40%;
+  border-radius: 0px;
+border: solid 1px #f18b5a;
+height: 30px;
+}
+
+form #message {
+  height: 190px;
+}
+
+#footer2 i{
+  font-size: 30px;
 }
 }
 /* ==========================================================================
